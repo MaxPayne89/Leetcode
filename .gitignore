@@ -24,7 +24,7 @@ hs_err_pid*
 replay_pid*
 
 # IntelliJ IDEA files
-.idea/
+.idea
 *.iml
 *.iws
 
