@@ -41,4 +41,4 @@ out/
 !gradle-wrapper.jar
 
 # Local configuration file (sdk path, etc)
-local.properties
+local.properties!/.idea/
