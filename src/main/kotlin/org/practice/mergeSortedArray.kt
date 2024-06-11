@@ -35,6 +35,25 @@ fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
     }
 }
 
+fun mergeOptimized(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
+    var readPointer1 = m - 1
+    var readPointer2 = n - 1
+
+    for (writePointer in (m + n - 1) downTo 0) {
+        if (readPointer2 < 0) {
+            break
+        }
+
+        if (readPointer1 >= 0 && nums1[readPointer1] > nums2[readPointer2]) {
+            nums1[writePointer] = nums1[readPointer1]
+            readPointer1--
+        } else {
+            nums1[writePointer] = nums2[readPointer2]
+            readPointer2--
+        }
+    }
+}
+
 private fun catchOutOfBounds(arr: IntArray, index: Int) =
     try {
         arr[index]
