@@ -38,9 +38,51 @@ fun maxProfitOptimized(prices: IntArray): Int {
     return maxProfit
 }
 
+fun maxProfitTwo(prices: IntArray): Int {
+    var profit = 0
+    var buyPointer = 0
+    var sellPointer = 1
+
+    while (sellPointer <= prices.lastIndex) {
+        val buyPrice = prices[buyPointer]
+        val sellPrice = prices[sellPointer]
+        if (sellPrice > buyPrice) {
+            if (sellPointer < prices.lastIndex && prices[sellPointer] < prices[sellPointer+1]) {
+                sellPointer++
+            } else {
+                profit += sellPrice - buyPrice
+                buyPointer = sellPointer
+                sellPointer = buyPointer+1
+            }
+        } else {
+            buyPointer++
+            sellPointer++
+        }
+    }
+    return profit
+}
+
+fun maxProfitTwoOptimized(prices: IntArray): Int {
+    var totalProfit = 0
+    var valley = Int.MAX_VALUE
+    var peak = valley
+
+    for (i in prices.indices) {
+        if (prices[i] < peak) {
+            totalProfit += peak - valley
+            valley = prices[i]
+            peak = valley
+        } else {
+            peak = prices[i]
+        }
+    }
+    totalProfit += peak - valley
+    return totalProfit
+}
+
 fun main() {
-    val input1 = intArrayOf(7,1,5,3,6,4)
-//    val input1 = intArrayOf(1,2)
-    val a = maxProfitOptimized(input1)
+//    val input1 = intArrayOf(7,1,5,3,6,4)
+    val input1 = intArrayOf(1,2,3,4,5)
+    val a = maxProfitTwoOptimized(input1)
     println(a)
 }
