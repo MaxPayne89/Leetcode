@@ -58,8 +58,25 @@ fun canJumpGreedy(nums: IntArray): Boolean {
     return lastPosition == 0
 }
 
+fun canJumpMinNumberOfHops(nums: IntArray): Int {
+    var hops = 0
+    var currEnd = 0
+    var currFarthest = 0
+
+    for (index in 0 until nums.lastIndex) {
+        currFarthest = maxOf(currFarthest, nums[index] + index)
+
+        if (index == currEnd) {
+            hops++
+            currEnd = currFarthest
+        }
+    }
+
+    return hops
+}
+
 fun main() {
-    val input1 = intArrayOf(9, 4, 2, 1, 0, 2, 0)
-    val a = canJumpGreedy(input1)
+    val input1 = intArrayOf(2,3,1,1,4)
+    val a = canJumpMinNumberOfHops(input1)
     println(a)
 }
