@@ -46,10 +46,10 @@ fun main() {
     val input = arrayOf("flower","flow","flight")
 //    val input2 = arrayOf("a","a","b")
     val input3 = arrayOf("abab","aba","")
-//    val a = longestCommonPrefixOptimized(input)
+    val a = longestCommonPrefixOptimized(input)
 //    val b = longestCommonPrefix(input2)
     val c = longestCommonPrefixOptimized(input3)
-//    println(a)
+    println(a)
 //    println(b)
     println(c)
 }
