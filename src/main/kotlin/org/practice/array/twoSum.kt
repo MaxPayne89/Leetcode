@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
     val map = nums.withIndex().associateBy(keySelector = {target - it.value}, valueTransform = {it.index})

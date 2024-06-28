@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun duplicateZeros(arr: IntArray): Unit {
     var i = 0

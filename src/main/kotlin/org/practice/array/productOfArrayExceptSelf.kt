@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun productExceptSelf(nums: IntArray): IntArray {
     val prefixList = Array(nums.size) {1}

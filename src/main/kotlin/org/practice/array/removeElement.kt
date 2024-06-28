@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun removeElement(nums: IntArray, `val`: Int): Int {
     val l = nums.filterNot { it == `val` }

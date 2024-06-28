@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun rotate(nums: IntArray, k: Int): Unit {
     val copyArr = nums.copyOf()

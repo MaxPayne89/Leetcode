@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun findMaxConsecutiveOnes(nums: IntArray): Int {
     var onesInARowMax = 0

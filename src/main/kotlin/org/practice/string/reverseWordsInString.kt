@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 fun reverseWords(s: String): String {
     val t = s.trim()

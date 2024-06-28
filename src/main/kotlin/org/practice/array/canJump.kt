@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 enum class Index {
     GOOD,
@@ -7,7 +7,7 @@ enum class Index {
 }
 
 fun canJump(nums: IntArray): Boolean {
-    memo = Array(nums.size) { _ -> Index.UNKNOWN}
+    memo = Array(nums.size) { _ -> Index.UNKNOWN }
     memo[nums.lastIndex] = Index.GOOD
     return canJumpFromPosition(0, nums)
 }
@@ -32,7 +32,7 @@ private fun canJumpFromPosition(position: Int, nums: IntArray ): Boolean {
 }
 
 fun canJumpTwo(nums: IntArray): Boolean {
-    val memo = Array(nums.size) { _ -> Index.UNKNOWN}
+    val memo = Array(nums.size) { _ -> Index.UNKNOWN }
     memo[nums.lastIndex] = Index.GOOD
 
     for (i in nums.lastIndex-1 downTo 0) {

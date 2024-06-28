@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun validMountainArray(arr: IntArray): Boolean {
     if (arr.size < 3) return false

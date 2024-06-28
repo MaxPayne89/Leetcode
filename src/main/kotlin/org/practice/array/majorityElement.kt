@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun majorityElement(nums: IntArray): Int {
     if (nums.size == 1) return nums.first()

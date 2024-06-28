@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 fun lengthOfLastWord(s: String): Int {
     val charArr = s.toCharArray()

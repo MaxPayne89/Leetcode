@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun checkIfExist(arr: IntArray): Boolean {
     val map = mutableMapOf<Int,Int>()

@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun findNumbers(nums: IntArray): Int {
     var evenDigits = 0

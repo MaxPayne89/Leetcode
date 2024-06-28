@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 val romanNumeralsMap = mapOf(
     "I" to 1,

@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun maxProfit(prices: IntArray): Int {
     var maxProfit = 0

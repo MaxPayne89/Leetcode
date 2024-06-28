@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 fun strStr(haystack: String, needle: String): Int {
     return haystack.indexOf(needle)

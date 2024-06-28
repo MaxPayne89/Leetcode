@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 fun reverseString(s: CharArray): Unit {
     var rightIndex = s.lastIndex

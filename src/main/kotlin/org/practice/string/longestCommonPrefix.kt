@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.string
 
 fun longestCommonPrefix(strs: Array<String>): String {
     if (strs.size == 1) {

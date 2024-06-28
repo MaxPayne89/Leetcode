@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.array
 
 fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
     val nums1Copy = IntArray(m)
