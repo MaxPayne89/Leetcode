@@ -1,6 +1,4 @@
-package org.practice
-
-import kotlin.math.roundToInt
+package org.practice.binarySearch
 
 fun mySqrt(x: Int): Int {
     if (x == 0) return 0

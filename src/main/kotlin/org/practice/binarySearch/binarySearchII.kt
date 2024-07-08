@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.binarySearch
 
 fun searchII(nums: IntArray, target: Int): Int {
     if (nums.isEmpty()) return -1

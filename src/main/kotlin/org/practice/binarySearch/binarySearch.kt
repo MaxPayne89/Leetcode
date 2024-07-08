@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.binarySearch
 
 fun search(nums: IntArray, target: Int): Int {
     var left = 0

@@ -1,4 +1,4 @@
-package org.practice
+package org.practice.binarySearch
 
 class Solution {
     fun guessNumber(n:Int):Int {
