@@ -1,4 +1,4 @@
-package org.practice.binaryTreeDFS
+package org.practice.binaryTree
 
 import org.practice.TreeNode
 
